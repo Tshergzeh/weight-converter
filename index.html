@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight Converter</title>
+    <link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+    <h1>Weight Converter</h1>
+
+    <div class="converter" id="converter">
+        <div class="weight-type">
+            <label for="input">Pounds</label>
+            <input type="number" name="input" id="input" placeholder="--" min="0" step="any"/>
+            <select name="input-unit" id="input-unit">
+                <option value="ton">Tonne</option>
+                <option value="kg">Kilogram</option>
+                <option value="g">Gram</option>
+                <option value="mg">Milligram</option>
+                <option value="mcg">Microgram</option>
+                <option value="iton">Imperial ton</option>
+                <option value="uston">US ton</option>
+                <option value="st">Stone</option>
+                <option value="lb">Pound</option>
+                <option value="oz">Ounce</option>
+            </select>
+        </div><div class="weight-type">
+            <label for="output">Kilograms</label>
+            <input type="number" name="output" id="output" placeholder="--" min="0" step="any"/>
+            <select name="output-unit" id="output-unit">
+                <option value="ton">Tonne</option>
+                <option value="kg" selected>Kilogram</option>
+                <option value="g">Gram</option>
+                <option value="mg">Milligram</option>
+                <option value="mcg">Microgram</option>
+                <option value="iton">Imperial ton</option>
+                <option value="uston">US ton</option>
+                <option value="st">Stone</option>
+                <option value="lb">Pound</option>
+                <option value="oz">Ounce</option>
+            </select>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
